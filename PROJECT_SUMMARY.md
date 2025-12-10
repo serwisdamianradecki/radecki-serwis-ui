@@ -3,6 +3,7 @@
 ## ✅ Co zostało zrealizowane
 
 ### 1. **Struktura techniczna**
+
 - ✅ Next.js 14 (latest stable) + TypeScript
 - ✅ Tailwind CSS z custom konfiguracją
 - ✅ App Router (nowoczesna architektura Next.js)
@@ -10,6 +11,7 @@
 - ✅ Mobile-first responsive design
 
 ### 2. **Paleta kolorów kaszmirowa**
+
 ```
 Background:    #FBF9F7 (ciepły jasny beż)
 Primary:       #6B5B95 (kaszmirowy fiolet)
@@ -21,7 +23,9 @@ Border:        #EAE7E4 (subtelne obramowania)
 ```
 
 ### 3. **Architektura treści**
+
 Wszystkie teksty w modułach `/content/*.text.ts`:
+
 - ✅ `hero.text.ts` - nagłówki, CTA, mikro-CTA
 - ✅ `services.text.ts` - opis usług, lista punktowana
 - ✅ `pricing.text.ts` - PEŁNY cennik (9 kategorii, 30+ pozycji)
@@ -31,15 +35,18 @@ Wszystkie teksty w modułach `/content/*.text.ts`:
 ### 4. **Komponenty**
 
 #### Reusable (DRY):
+
 - ✅ `Button.tsx` - 3 warianty (primary, secondary, outline), 3 rozmiary
 - ✅ `Section.tsx` - wrapper sekcji z paddingami, tłem
 
 #### Layout:
+
 - ✅ `Header.tsx` - sticky navigation, mobile menu, CTA button, tel: link
 - ✅ `Footer.tsx` - 3 kolumny, kontakt, obszar działania
 - ✅ `FloatingPhoneButton.tsx` - tylko mobile, bottom-right
 
 #### Page sections:
+
 - ✅ `Hero.tsx` - heading, subheading, 2x CTA, tel: link, obraz
 - ✅ `Services.tsx` - opis, 10 usług w grid, CTA, mikro-CTA
 - ✅ `PricingTable.tsx` - pełny cennik w kategoriach, disclaimer, footnote
@@ -47,6 +54,7 @@ Wszystkie teksty w modułach `/content/*.text.ts`:
 - ✅ `Contact.tsx` - karty kontaktowe (tel, email, adres), 2x CTA
 
 ### 5. **SEO i Structured Data**
+
 - ✅ Meta tags (title, description) z lokalnymi keywordami:
   - "serwis laptopów Żory"
   - "naprawa komputerów Rybnik"
@@ -62,7 +70,9 @@ Wszystkie teksty w modułach `/content/*.text.ts`:
 - ✅ Robots.txt (auto-generated)
 
 ### 6. **Zmienne środowiskowe**
+
 Wszystkie dane kontaktowe w `.env`:
+
 ```
 NEXT_PUBLIC_PHONE
 NEXT_PUBLIC_EMAIL
@@ -73,6 +83,7 @@ NEXT_PUBLIC_SITE_URL
 ```
 
 ### 7. **Konwersja i CTA**
+
 - ✅ Każda sekcja ma dedykowany CTA button
 - ✅ Mikro-CTA na końcu każdej sekcji ("Masz pytanie? Zadzwoń: XXX")
 - ✅ Wszystkie linki tel: używają zmiennej środowiskowej
@@ -81,7 +92,9 @@ NEXT_PUBLIC_SITE_URL
 - ✅ Sekcja Hero: 2 CTA (primary + secondary)
 
 ### 8. **Treści w języku polskim**
+
 ✅ 100% tekstów po polsku, zgodnie z briefem:
+
 - Heading hero: "Prof. serwis komputerów i laptopów — Żory, Rybnik, Pawłowice"
 - About: pełny opis z Google Business
 - Services: blurb z Facebooka + lista usług
@@ -89,6 +102,7 @@ NEXT_PUBLIC_SITE_URL
 - Wszystkie CTA i mikro-CTA po polsku
 
 ### 9. **Dokumentacja**
+
 - ✅ `README.md` - pełna dokumentacja (6 sekcji)
 - ✅ `QUICKSTART.md` - szybki start (5 kroków)
 - ✅ `DEPLOYMENT.md` - 4 opcje deploymentu (Vercel, Netlify, FTP, GitHub Pages)
@@ -150,28 +164,35 @@ serwis-it-v2.0.0/
 ## 🎯 Co należy zrobić po otrzymaniu projektu
 
 ### Krok 1: Instalacja
+
 ```bash
 npm install
 ```
 
 ### Krok 2: Konfiguracja
+
 ```bash
 cp .env.example .env.local
 # Edytuj .env.local - wpisz swoje dane
 ```
 
 ### Krok 3: Dodaj obrazy
+
 Umieść w `/public/img/`:
+
 - `hero_image.png` (1200x800px+)
 - `profile_image.png` (400x400px, kwadrat)
 
 ### Krok 4: Test lokalny
+
 ```bash
 npm run dev
 ```
+
 Otwórz http://localhost:3000
 
 ### Krok 5: Deployment
+
 Zobacz `DEPLOYMENT.md` - 4 opcje deploymentu.
 
 ---

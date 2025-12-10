@@ -1,6 +1,7 @@
 export const contactContent = {
   heading: "Kontakt",
-  description: "Masz problem z komputerem? Zadzwoń lub napisz — odpowiem szybko i umówimy dogodny termin.",
+  description:
+    "Masz problem z komputerem? Zadzwoń lub napisz — odpowiem szybko i umówimy dogodny termin.",
   formHeading: "Napisz do mnie",
   phoneCta: "Zadzwoń teraz",
   emailCta: "Wyślij email",

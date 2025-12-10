@@ -22,6 +22,7 @@ cp .env.example .env.local
 ## Krok 3: Dodaj obrazy
 
 Umieść w folderze `/public/img/`:
+
 - `hero_image.png` (zdjęcie główne, np. warsztat, laptop w naprawie)
 - `profile_image.png` (twoje zdjęcie lub logo)
 
@@ -36,6 +37,7 @@ Otwórz [http://localhost:3000](http://localhost:3000) w przeglądarce.
 ## Krok 5: Dostosuj treści (opcjonalne)
 
 Edytuj pliki w folderze `/content/`:
+
 - `hero.text.ts` - nagłówki, CTA
 - `services.text.ts` - lista usług
 - `pricing.text.ts` - cennik
@@ -60,6 +62,7 @@ npm run lint     # Sprawdź błędy kodu
 ## Potrzebujesz pomocy?
 
 Sprawdź:
+
 - `README.md` - pełna dokumentacja
 - `DEPLOYMENT.md` - instrukcje wdrożenia
 - `CHANGELOG.md` - historia zmian

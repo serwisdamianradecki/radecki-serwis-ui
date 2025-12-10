@@ -12,8 +12,9 @@ interface PricingCategory {
 export const pricingContent = {
   heading: "Cennik – uczciwe ceny bez ukrytych kosztów",
   note: "Ceny są orientacyjne i zależą od skomplikowania naprawy oraz stanu sprzętu. Każdą usługę wyceniam indywidualnie po bezpłatnej diagnozie (50 zł diagnostyki odliczam przy naprawie). Żadnych ukrytych opłat – wiesz, za co płacisz.",
-  legalFootnote: "* Usługi świadczone w ramach działalności nierejestrowanej zgodnie z art. 5 ustawy Prawo przedsiębiorców.",
-  
+  legalFootnote:
+    "* Usługi świadczone w ramach działalności nierejestrowanej zgodnie z art. 5 ustawy Prawo przedsiębiorców.",
+
   categories: [
     {
       name: "Diagnostyka",
@@ -41,7 +42,8 @@ export const pricingContent = {
           price: "80–120 zł",
         },
         {
-          service: "Wymiana pasty termicznej klasy premium (np. Thermal Grizzly)",
+          service:
+            "Wymiana pasty termicznej klasy premium (np. Thermal Grizzly)",
           price: "+30–50 zł",
         },
       ],
@@ -115,23 +117,6 @@ export const pricingContent = {
       ],
     },
     {
-      name: "Odzyskiwanie danych",
-      items: [
-        {
-          service: "Odzyskiwanie danych – poziom podstawowy",
-          price: "100–200 zł",
-        },
-        {
-          service: "Odzyskiwanie danych – poziom średni (RAW, błędy logiczne)",
-          price: "200–400 zł",
-        },
-        {
-          service: "Odzyskiwanie danych – poziom zaawansowany (fizyczne uszkodzenia)",
-          price: "od 400 zł",
-        },
-      ],
-    },
-    {
       name: "Usuwanie wirusów i problemów z oprogramowaniem",
       items: [
         {
@@ -174,13 +159,14 @@ export const pricingContent = {
           note: "Gratis przy większych naprawach",
         },
         {
-          service: "Naprawa na miejscu u klienta (diagnostyka + drobne naprawy)",
+          service:
+            "Naprawa na miejscu u klienta (diagnostyka + drobne naprawy)",
           price: "80–120 zł",
         },
       ],
     },
   ],
-  
+
   ctaButton: "Umów naprawę",
   ctaMicro: "Potrzebujesz wyceny? Zadzwoń:",
 } as const;

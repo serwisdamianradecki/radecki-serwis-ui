@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 ### Projekt utworzony od podstaw
 
 #### Dodane
+
 - ✅ Next.js 14 + TypeScript + Tailwind CSS setup
 - ✅ Kompletna paleta kolorów kaszmirowa (background, primary, accent)
 - ✅ Modułowa architektura treści (`/content/*.text.ts`)
@@ -33,15 +34,17 @@ All notable changes to this project will be documented in this file.
 - ✅ Static export ready (dla prostego hostingu)
 
 #### Treści
+
 - Użyto dokładnych tekstów z briefu:
   - Heading hero: "Prof. serwis komputerów i laptopów — Żory, Rybnik, Pawłowice"
   - Opis z Google Business
   - Blurb z Facebooka
   - Pełny cennik ze wszystkimi kategoriami
   - Uwagi prawne i disclaimery
-- Wszystkie teksty w modułach content/*.text.ts (łatwa edycja)
+- Wszystkie teksty w modułach content/\*.text.ts (łatwa edycja)
 
 #### Techniczne
+
 - TypeScript strict mode
 - Tailwind CSS z customową konfiguracją
 - Next.js App Router

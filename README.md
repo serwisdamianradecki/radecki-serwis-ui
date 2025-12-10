@@ -5,7 +5,8 @@ Profesjonalna strona landing page dla lokalnego serwisu komputerów i laptopów.
 ## 🚀 Szybki start
 
 ### Wymagania
-- Node.js 18+ 
+
+- Node.js 18+
 - npm lub yarn
 
 ### Instalacja
@@ -67,17 +68,18 @@ serwis-it-v2.0.0/
 
 ### Edycja tekstów
 
-Wszystkie teksty widoczne na stronie znajdują się w plikach `/content/*.text.ts`. 
+Wszystkie teksty widoczne na stronie znajdują się w plikach `/content/*.text.ts`.
 
 **Przykład - zmiana nagłówka hero:**
 
 Otwórz `content/hero.text.ts`:
+
 ```typescript
 export const heroContent = {
   heading: "Twój nowy nagłówek",
   subheading: "Twój nowy podtytuł",
   // ...
-}
+};
 ```
 
 ### Edycja cennika
@@ -92,18 +94,19 @@ categories: [
       {
         service: "Nazwa usługi",
         price: "100 zł",
-        note: "Opcjonalna uwaga" // opcjonalne
+        note: "Opcjonalna uwaga", // opcjonalne
       },
     ],
   },
-]
+];
 ```
 
 ### Zmiana danych kontaktowych
 
-Dane kontaktowe (telefon, email, adres) są przechowywane w **zmiennych środowiskowych**. 
+Dane kontaktowe (telefon, email, adres) są przechowywane w **zmiennych środowiskowych**.
 
 Edytuj plik `.env.local`:
+
 ```env
 NEXT_PUBLIC_PHONE=+48 123 456 789
 NEXT_PUBLIC_EMAIL=kontakt@serwis-it.pl
@@ -118,6 +121,7 @@ NEXT_PUBLIC_SITE_URL=https://twoja-domena.pl
 ### Zmiana obrazków
 
 Umieść swoje obrazy w folderze `/public/img/`:
+
 - `hero_image.png` - obraz w sekcji hero (zalecany rozmiar: 1200x800px)
 - `profile_image.png` - zdjęcie profilowe (zalecany rozmiar: 400x400px)
 
@@ -142,6 +146,7 @@ colors: {
 ```
 
 Po zmianie kolorów w konfiguracji, użyj ich w komponentach poprzez klasy Tailwind:
+
 - `bg-primary` - tło w kolorze głównym
 - `text-primary` - tekst w kolorze głównym
 - `border-border` - obramowanie
@@ -179,6 +184,7 @@ Ponieważ strona jest wyeksportowana jako statyczna (`output: 'export'` w `next.
 ### Metadata
 
 Metadata SEO jest skonfigurowana w `app/page.tsx`:
+
 - Title
 - Description (z lokalnymi słowami kluczowymi)
 - Open Graph tags
@@ -196,6 +202,7 @@ Strona zawiera structured data typu `LocalBusiness` dla lepszej widoczności w G
 ## 📱 Responsywność
 
 Strona jest **mobile-first** i w pełni responsywna:
+
 - Mobile: < 768px
 - Tablet: 768px - 1024px
 - Desktop: > 1024px
@@ -216,15 +223,18 @@ npm run lint         # Sprawdź błędy ESLint
 Strona nie zawiera domyślnie ciężkich narzędzi analytics. Zalecenia:
 
 **Szanujące prywatność:**
+
 - [Plausible Analytics](https://plausible.io/) - lekkie, bez cookies
 - [Simple Analytics](https://simpleanalytics.com/) - minimalistyczne
 
 **Tradycyjne:**
+
 - Google Analytics 4 (wymaga zgody na cookies)
 
 ## 🛠 Wsparcie techniczne
 
 W razie problemów:
+
 1. Sprawdź czy zainstalowałeś wszystkie zależności (`npm install`)
 2. Sprawdź czy plik `.env.local` istnieje i ma poprawne wartości
 3. Zrestartuj serwer developerski

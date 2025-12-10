@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 interface AnimatedCardProps {
   children: React.ReactNode;
@@ -8,7 +8,11 @@ interface AnimatedCardProps {
   className?: string;
 }
 
-export default function AnimatedCard({ children, delay = 0, className = '' }: AnimatedCardProps) {
+export default function AnimatedCard({
+  children,
+  delay = 0,
+  className = "",
+}: AnimatedCardProps) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -25,7 +29,7 @@ export default function AnimatedCard({ children, delay = 0, className = '' }: An
       },
       {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px',
+        rootMargin: "0px 0px -50px 0px",
       }
     );
 
@@ -43,7 +47,9 @@ export default function AnimatedCard({ children, delay = 0, className = '' }: An
   return (
     <div
       ref={ref}
-      className={`animate-on-scroll ${isVisible ? 'is-visible' : ''} card-hover ${className}`}
+      className={`animate-on-scroll ${
+        isVisible ? "is-visible" : ""
+      } card-hover ${className}`}
     >
       {children}
     </div>

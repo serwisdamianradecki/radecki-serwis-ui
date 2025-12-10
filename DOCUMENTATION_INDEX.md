@@ -7,11 +7,14 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 ## 🎯 Quick Navigation
 
 ### Getting Started
+
 1. **[QUICKSTART.md](./QUICKSTART.md)** ⭐ START HERE
+
    - 5-step quick setup guide
    - Install → Configure → Add images → Run → Done!
 
 2. **[README.md](./README.md)** 📖 Full Documentation
+
    - Complete project overview
    - Folder structure
    - How to edit content
@@ -28,6 +31,7 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 ## 🚀 Deployment & Production
 
 4. **[DEPLOYMENT.md](./DEPLOYMENT.md)** 🌐 How to Deploy
+
    - 4 deployment options:
      - Vercel (easiest, recommended)
      - Netlify
@@ -45,12 +49,14 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 ## 📝 Content & Reference
 
 6. **[CONTENT_REFERENCE.md](./CONTENT_REFERENCE.md)** 📋 All Polish Copy
+
    - Complete list of all text content
    - Organized by section
    - Exact wording from brief
    - Perfect reference when editing
 
 7. **[PROJECT_SUMMARY.md](./PROJECT_SUMMARY.md)** 🎯 What's Included
+
    - Complete feature list
    - Technical specifications
    - Color palette details
@@ -66,6 +72,7 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 ## 💻 Code Documentation
 
 ### Main Files
+
 - **`/app/page.tsx`** - Main homepage with all sections
 - **`/app/layout.tsx`** - Root layout with fonts and metadata
 - **`/components/*`** - Reusable React components
@@ -73,6 +80,7 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 - **`/lib/*`** - Utility functions (SEO, JSON-LD schema)
 
 ### Configuration
+
 - **`tailwind.config.js`** - Colors, fonts, spacing
 - **`next.config.js`** - Next.js configuration
 - **`tsconfig.json`** - TypeScript settings
@@ -125,6 +133,7 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 ## 🎨 Design & Branding
 
 **Color Palette (Kaszmirowa):**
+
 - Background: `#FBF9F7`
 - Primary: `#6B5B95`
 - Accent: `#9FB7A7`
@@ -133,6 +142,7 @@ Welcome to the Serwis IT Landing Page project! This file helps you navigate all 
 See `tailwind.config.js` for all colors.
 
 **Images Needed:**
+
 - `hero_image.png` (1200x800px+)
 - `profile_image.png` (400x400px)
 
@@ -143,12 +153,14 @@ See [public/img/README.md](./public/img/README.md)
 ## 📱 Support & Help
 
 **Common Issues:**
+
 - Dependencies not installing → Run `npm install` again
 - Page not loading → Check `.env.local` exists and has correct values
 - Images not showing → Check `/public/img/` folder
 - TypeScript errors → Run `npm run build` to see exact issues
 
 **Documentation Not Clear?**
+
 - Check multiple docs - information may be in different files
 - Use Ctrl+F / Cmd+F to search within files
 
@@ -181,6 +193,7 @@ Configuration Files:
 ## 🚀 Recommended Reading Order
 
 ### First Time Setup
+
 1. [QUICKSTART.md](./QUICKSTART.md) - Get it running
 2. [README.md](./README.md) - Understand how it works
 3. Edit content files in `/content/`
@@ -188,12 +201,14 @@ Configuration Files:
 5. [DEPLOYMENT.md](./DEPLOYMENT.md) - Go live!
 
 ### Making Changes
+
 1. [CONTENT_REFERENCE.md](./CONTENT_REFERENCE.md) - See what's there
 2. Edit `/content/*.text.ts` files
 3. Edit `.env.local` for contact info
 4. Test with `npm run dev`
 
 ### Before Launch
+
 1. [PRE_LAUNCH_CHECKLIST.md](./PRE_LAUNCH_CHECKLIST.md) - Complete checklist
 2. [DEPLOYMENT.md](./DEPLOYMENT.md) - Choose deployment method
 3. Deploy and celebrate! 🎉

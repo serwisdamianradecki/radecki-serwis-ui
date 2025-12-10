@@ -1,6 +1,8 @@
 export const heroContent = {
-  heading: "Profesjonalny serwis komputerów i laptopów w Żorach, Rybniku i okolicach",
-  subheading: "Naprawiam to, co inni uznają za nieopłacalne. Szybka diagnostyka, uczciwe ceny i serwis z dojazdem do klienta. Twój sprzęt znów będzie działał jak nowy.",
+  heading:
+    "Profesjonalny serwis komputerów i laptopów w Żorach, Rybniku i okolicach",
+  subheading:
+    "Serwis komputerowy z dojazdem do klienta. Naprawa laptopów Żory, czyszczenie komputera, instalacja Windows, wymiana dysków SSD i przyspieszanie laptopów. Szybka diagnostyka i uczciwe ceny.",
   ctaPrimary: "Umów naprawę",
   ctaSecondary: "Napisz do mnie",
   ctaMicro: "Potrzebujesz pomocy? Zadzwoń:",

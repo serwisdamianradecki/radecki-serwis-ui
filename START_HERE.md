@@ -86,6 +86,7 @@ Open [http://localhost:3000](http://localhost:3000) 🎉
 ### Change Text Content
 
 Edit files in `/content/`:
+
 - `hero.text.ts` - Hero section
 - `services.text.ts` - Services list
 - `pricing.text.ts` - Full pricing table
@@ -93,18 +94,20 @@ Edit files in `/content/`:
 - `contact.text.ts` - Contact section
 
 **Example:**
+
 ```typescript
 // content/hero.text.ts
 export const heroContent = {
   heading: "Your new heading here",
   subheading: "Your new subheading",
   // ...
-}
+};
 ```
 
 ### Change Contact Info
 
 Edit `.env.local`:
+
 ```env
 NEXT_PUBLIC_PHONE=+48 123 456 789
 NEXT_PUBLIC_EMAIL=kontakt@serwis-it.pl
@@ -115,6 +118,7 @@ NEXT_PUBLIC_EMAIL=kontakt@serwis-it.pl
 ### Change Colors
 
 Edit `tailwind.config.js`:
+
 ```javascript
 colors: {
   primary: '#6B5B95', // Change to your brand color
@@ -143,6 +147,7 @@ git push
 ```
 
 **Other options:**
+
 - Netlify (similar to Vercel)
 - Traditional hosting (FTP/cPanel)
 - GitHub Pages
@@ -201,6 +206,7 @@ serwis-it-v2.0.0/
 ## 🎨 Design
 
 **Color Palette (Kaszmirowa):**
+
 - Background: `#FBF9F7` - warm light beige
 - Primary: `#6B5B95` - cashmere mauve
 - Accent: `#9FB7A7` - soft green
@@ -236,6 +242,7 @@ Use the checklist in [PRE_LAUNCH_CHECKLIST.md](./PRE_LAUNCH_CHECKLIST.md):
 - **TypeScript errors?** → Run `npm run build` to see details
 
 **Documentation:**
+
 - Full docs: [README.md](./README.md)
 - Deployment help: [DEPLOYMENT.md](./DEPLOYMENT.md)
 - All docs index: [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)

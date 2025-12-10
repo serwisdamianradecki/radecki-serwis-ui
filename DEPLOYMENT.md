@@ -9,6 +9,7 @@ Vercel to platforma stworzona przez twórców Next.js. Oferuje darmowy hosting d
 **Kroki:**
 
 1. **Wyślij kod na GitHub**
+
    ```bash
    git init
    git add .
@@ -19,16 +20,19 @@ Vercel to platforma stworzona przez twórców Next.js. Oferuje darmowy hosting d
    ```
 
 2. **Zaloguj się na Vercel**
+
    - Wejdź na [vercel.com](https://vercel.com)
    - Zaloguj się przez GitHub
 
 3. **Import projektu**
+
    - Kliknij "New Project"
    - Wybierz repozytorium z GitHuba
    - Vercel automatycznie wykryje Next.js
 
 4. **Dodaj zmienne środowiskowe**
    W ustawieniach projektu dodaj:
+
    ```
    NEXT_PUBLIC_PHONE=+48 123 456 789
    NEXT_PUBLIC_EMAIL=kontakt@serwis-it.pl
@@ -44,6 +48,7 @@ Vercel to platforma stworzona przez twórców Next.js. Oferuje darmowy hosting d
    - Gotowe! 🎉
 
 **Własna domena:**
+
 - W ustawieniach projektu → Domains
 - Dodaj swoją domenę
 - Zaktualizuj DNS u swojego rejestratora
@@ -59,14 +64,17 @@ Podobne do Vercel, również darmowe dla małych projektów.
 1. **Wyślij kod na GitHub** (jak wyżej)
 
 2. **Zaloguj się na Netlify**
+
    - Wejdź na [netlify.com](https://netlify.com)
    - Zaloguj się przez GitHub
 
 3. **Import projektu**
+
    - "Add new site" → "Import an existing project"
    - Wybierz repozytorium
 
 4. **Konfiguracja build**
+
    ```
    Build command: npm run build
    Publish directory: out
@@ -86,18 +94,22 @@ Jeśli masz tradycyjny hosting z cPanelem lub FTP.
 **Kroki:**
 
 1. **Zbuduj projekt lokalnie**
+
    ```bash
    npm run build
    ```
+
    To stworzy folder `/out` z gotową stroną statyczną.
 
 2. **Upload przez FTP**
+
    - Połącz się z serwerem FTP (FileZilla, WinSCP, itp.)
    - Upload zawartości folderu `/out` do `public_html` lub `www`
 
 3. **Konfiguracja serwera**
-   
+
    Stwórz plik `.htaccess` w głównym katalogu:
+
    ```apache
    # Przekierowanie na HTTPS
    RewriteEngine On
@@ -148,13 +160,14 @@ Lub stwórz plik `.env.local` i uruchom `npm run build`.
 **Kroki:**
 
 1. **Dodaj do `next.config.js`:**
+
    ```javascript
-   const isProd = process.env.NODE_ENV === 'production';
-   
+   const isProd = process.env.NODE_ENV === "production";
+
    const nextConfig = {
-     output: 'export',
-     basePath: isProd ? '/nazwa-repo' : '',
-     assetPrefix: isProd ? '/nazwa-repo/' : '',
+     output: "export",
+     basePath: isProd ? "/nazwa-repo" : "",
+     assetPrefix: isProd ? "/nazwa-repo/" : "",
      images: {
        unoptimized: true,
      },
@@ -162,6 +175,7 @@ Lub stwórz plik `.env.local` i uruchom `npm run build`.
    ```
 
 2. **Deploy script w `package.json`:**
+
    ```json
    "scripts": {
      "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
@@ -169,11 +183,13 @@ Lub stwórz plik `.env.local` i uruchom `npm run build`.
    ```
 
 3. **Zainstaluj gh-pages:**
+
    ```bash
    npm install --save-dev gh-pages
    ```
 
 4. **Deploy:**
+
    ```bash
    npm run deploy
    ```
@@ -200,14 +216,17 @@ Lub stwórz plik `.env.local` i uruchom `npm run build`.
 ## 🎯 Po deploymencie
 
 ### 1. Testuj SEO
+
 - [Google Search Console](https://search.google.com/search-console)
 - [PageSpeed Insights](https://pagespeed.web.dev/)
 - [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### 2. Zarejestruj w Google Business
+
 Ważne dla lokalnego SEO!
 
 ### 3. Monitoring
+
 - Ustaw Google Analytics (opcjonalne)
 - Lub Plausible Analytics (szanujące prywatność)
 
@@ -216,12 +235,15 @@ Ważne dla lokalnego SEO!
 ## 🆘 Troubleshooting
 
 **Problem:** Obrazy się nie wyświetlają po deploymencie
+
 - **Rozwiązanie:** Sprawdź czy obrazy są w `/public/img/`, sprawdź ścieżki (case-sensitive!)
 
 **Problem:** Zmienne środowiskowe nie działają
+
 - **Rozwiązanie:** Upewnij się że zmienna zaczyna się od `NEXT_PUBLIC_` dla kodu klienta
 
 **Problem:** Strona pokazuje 404 na podstronach
+
 - **Rozwiązanie:** To jest SPA, potrzebujesz przekierowań na hostingu (patrz `.htaccess` wyżej)
 
 ---

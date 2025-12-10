@@ -3,6 +3,7 @@
 Place the following images in this directory:
 
 1. **hero_image.png**
+
    - Recommended size: 1200x800px or larger
    - Format: PNG or JPG
    - Content: Computer repair workshop, laptop being serviced, or professional tech setup
@@ -17,6 +18,7 @@ Place the following images in this directory:
 ## Image Optimization
 
 Next.js will automatically optimize these images when you use them. For best results:
+
 - Use modern formats (WebP, AVIF) when possible
 - Keep file sizes reasonable (< 500KB before optimization)
 - Use high-quality source images (they'll be compressed automatically)
